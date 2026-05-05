@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                                  /* Modern Node.js standard (fixes the ES5 error) */
+    "module": "commonjs",                                /* Required for Express */
+    "rootDir": "./src",                                  /* Tells TS where your code lives (fixes the TS5011 error) */
+    "outDir": "./dist",                                  /* Where the compiled code goes */
+    "esModuleInterop": true,                             /* Fixes import issues with commonjs libraries */
+    "forceConsistentCasingInFileNames": true,            /* Best practice for Windows/Linux compatibility */
+    "strict": true,                                      /* Enables all strict type-checking options */
+    "skipLibCheck": true                                 /* Skips type checking of node_modules to speed up builds */
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
